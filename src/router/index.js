@@ -1,18 +1,30 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import HomeView from "../views/HomeView.vue";
-import AboutView from "../views/AboutView.vue";
-
+import NotesView from "../views/NotesView.vue";
+import TasksView from "../views/TasksView.vue";
+import AddNoteView from "../views/AddNoteView.vue";
+import AddTaskView from "../views/AddTaskView.vue";
 const routes = [
   {
     path: "/",
-    name: "home",
-    component: HomeView,
+    name: "notes",
+    component: NotesView,
   },
   {
-    path: "/about",
-    name: "about",
-    component: AboutView,
+    path: "/notes/add",
+    name: "add_note",
+    component: AddNoteView,
+  },
+  {
+    path: "/tasks",
+    name: "tasks",
+    component: TasksView,
+  },
+
+  {
+    path: "/tasks/add",
+    name: "add_task",
+    component: AddTaskView,
   },
 ];
 

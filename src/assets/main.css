@@ -1,0 +1,15 @@
+@import url("./base.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: var(--prim-color);
+    color:var(--white);
+    caret-color: #ffc107;
+}
